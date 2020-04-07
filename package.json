@@ -1,0 +1,28 @@
+{
+  "name": "naya-studio-backend",
+  "version": "0.1.0",
+  "description": "Backend for Naya Studio onborading sample",
+  "main": "main.js",
+  "scripts": {
+    "test": "nodemon main.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/aneeshsharma/naya-studio-backend.git"
+  },
+  "keywords": [
+    "express",
+    "RESTful"
+  ],
+  "author": "Anish Sharma",
+  "license": "GPL-3.0-or-later",
+  "bugs": {
+    "url": "https://github.com/aneeshsharma/naya-studio-backend/issues"
+  },
+  "homepage": "https://github.com/aneeshsharma/naya-studio-backend#readme",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "cors": "^2.8.5",
+    "express": "^4.17.1"
+  }
+}
