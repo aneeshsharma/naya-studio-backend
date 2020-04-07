@@ -5,29 +5,15 @@ var app = express();
 
 app.use(bodyParser.json());
 
-app.use(function (req, res, next) {
-    res.setHeader(
-        "Access-Control-Allow-Origin",
-        "http://localhost:3000/register"
-    );
-    res.setHeader("Access-Control-Allow-Methods", "GET, POST");
-    res.setHeader(
-        "Access-Control-Allow-Headers",
-        "Origin, X-Requested-With, Content-Type, Accept"
-    );
-    next();
-});
 
-app.get("/", function (req, res) {
-    res.send("INVALID REQUEST");
-});
+app.use(cors());
 
-app.get("/register", (req, res) => {
-    console.log(req.body);
+app.get("/", (req, res) => {
+    console.log(req.query);
     res.send("FAILED");
 });
 
-var server = app.listen(3000, function () {
+var server = app.listen(7800, function () {
     var host = server.address().address;
     var port = server.address().port;
 
